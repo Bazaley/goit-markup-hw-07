@@ -1,0 +1,31 @@
+.features-list {
+  display: flex;
+}
+
+.features-list__item {
+  width: calc((100% - 90px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features-list__box {
+  @include alignment();
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.features-list__title {
+  @include font(700, 14px, 1.14);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.features-list__description {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-color-font);
+}
